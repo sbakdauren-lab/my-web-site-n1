@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Асқар | Веб-Разработчик</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="container">
+            <h2 class="logo">Асқар.dev</h2>
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-btn">🌙</button>
+        </div>
+    </nav>
+
+    <!-- Hero секция -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>Привет, я <span class="highlight">Асқар</span></h1>
+            <p class="subtitle">Студент, изучающий современные веб-технологии</p>
+            <p>HTML • CSS • JavaScript • Responsive Design</p>
+            <button onclick="showAlert()" class="btn primary">Узнать больше</button>
+        </div>
+    </section>
+
+    <!-- Обо мне -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Обо мне</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Я изучаю веб-разработку и люблю создавать красивые и функциональные сайты. Этот проект сделан специально для лабораторной работы №9 по дисциплине "Заманауи веб-технологиялар".</p>
+                    <ul>
+                        <li>✅ HTML5 семантическая разметка</li>
+                        <li>✅ Современный CSS3 + Flex/Grid + анимации</li>
+                        <li>✅ Чистый JavaScript (без библиотек)</li>
+                        <li>✅ Тёмная/светлая тема</li>
+                        <li>✅ Полностью адаптивный дизайн</li>
+                    </ul>
+                </div>
+                <div class="skills">
+                    <h3>Мои навыки</h3>
+                    <div class="skill-bar"><span>HTML</span><div class="bar" style="width:95%"></div></div>
+                    <div class="skill-bar"><span>CSS</span><div class="bar" style="width:90%"></div></div>
+                    <div class="skill-bar"><span>JavaScript</span><div class="bar" style="width:85%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Проекты -->
+    <section id="projects" class="section bg-alt">
+        <div class="container">
+            <h2>Мои проекты</h2>
+            <div class="projects-grid">
+                <div class="project-card" onclick="changeText(this)">
+                    <h3>Лабораторная №9</h3>
+                    <p>Этот сайт. Современный, интерактивный, с JS.</p>
+                    <span class="tag">HTML + CSS + JS</span>
+                </div>
+                <div class="project-card">
+                    <h3>Калькулятор расходов</h3>
+                    <p>Приложение для учёта финансов с локальным хранилищем.</p>
+                    <span class="tag">JavaScript</span>
+                </div>
+                <div class="project-card">
+                    <h3>Todo List с анимациями</h3>
+                    <p>Красивый список задач с drag & drop.</p>
+                    <span class="tag">CSS Animation</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты с формой -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Связаться со мной</h2>
+            <form id="contact-form" onsubmit="handleSubmit(event)">
+                <input type="text" id="name" placeholder="Ваше имя" required>
+                <input type="email" id="email" placeholder="Ваш email" required>
+                <textarea id="message" placeholder="Сообщение..." required></textarea>
+                <button type="submit" class="btn primary">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Асқар — Лабораторная работа №9. Все права защищены (шутка).</p>
+            <p>Сделано с ❤️ и большим количеством кофе</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
